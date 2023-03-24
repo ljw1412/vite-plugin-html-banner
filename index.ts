@@ -1,3 +1,5 @@
+import type { Plugin } from 'vite'
+
 function getContent(options: PluginOptions): string[] {
   if (Array.isArray(options)) {
     return options
@@ -15,7 +17,7 @@ function createBanner(content: string[]) {
 
 type PluginOptions = string | string[] | { content: string | string[] }
 
-module.exports = function (options: PluginOptions) {
+export default (options: PluginOptions = ''): Plugin => {
   const config = { content: getContent(options) }
 
   return {
