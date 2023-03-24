@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "outDir": "lib",
+    "declarationDir": "types",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "include": ["index.ts"]
+}

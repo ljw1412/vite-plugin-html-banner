@@ -1,0 +1,37 @@
+{
+  "name": "vite-plugin-html-banner",
+  "version": "0.0.1",
+  "description": "Adds a banner to the top of generated html.",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "test": "tsc -p ./tsconfig.json && mocha test/inject.spec.js"
+  },
+  "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "lib",
+    "types"
+  ],
+  "keywords": [
+    "vite",
+    "vite plugin",
+    "vite banner",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljw1412/vite-plugin-html-banner.git"
+  },
+  "author": "ljw1412",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljw1412/vite-plugin-html-banner/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.6",
+    "mocha": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
+  }
+}
