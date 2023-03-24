@@ -5,7 +5,7 @@ const fs = require('fs')
 const rimraf = require('rimraf')
 const assert = require('assert')
 const vite = require('vite')
-const BannerPlugin = require('../lib/index')
+const BannerPlugin = require('../dist/index.cjs')
 
 function resolve(...pathname) {
   return path.resolve(__dirname, ...pathname)

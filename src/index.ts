@@ -17,7 +17,7 @@ function createBanner(content: string[]) {
 
 type PluginOptions = string | string[] | { content: string | string[] }
 
-export default (options: PluginOptions = ''): Plugin => {
+export default function plugin(options: PluginOptions = ''): Plugin {
   const config = { content: getContent(options) }
 
   return {
